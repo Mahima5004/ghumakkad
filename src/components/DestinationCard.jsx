@@ -20,12 +20,12 @@ function DestinationCard({destination}) {
   },[destination])
   return (
     <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
-        {image.map((img) => (
+        { image && image.map((img) => (
             <img 
              key={img.id}
              src = {img.urls.small}
              alt = {img.alt_description}
-             className='rounded-lg'
+             className='rounded-xl w-full h-48 object-cover'
             />
         ))}
     </div>
