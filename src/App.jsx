@@ -10,9 +10,9 @@ function App() {
      {/* routing via react-router-dom(web specific) */}
 
      {/* share for all the pages */}
-     <Navbar/> 
 
       <BrowserRouter>
+        <Navbar/> 
         <Routes>
           <Route path="/" element = {<Home/>}/>
         </Routes>
